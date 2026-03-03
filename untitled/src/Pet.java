@@ -1,4 +1,6 @@
-public class Pet extends Espeziea{
+import Objektuak.Espeziea;
+
+public class Pet extends Espeziea {
     private String izena;
 
 }

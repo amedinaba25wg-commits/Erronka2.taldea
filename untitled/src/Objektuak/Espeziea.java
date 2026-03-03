@@ -1,3 +1,5 @@
+package Objektuak;
+
 public class Espeziea {
     private String izenZientifikoa;
     private String izenArrunta;

@@ -14,4 +14,13 @@ public class ErabiltzaileZerrenda {
         return -1;      // Ez da ondo gehitu
     }
 
+    public Erabiltzailea login(String username, String password) {
+        for (Erabiltzailea erabiltzailea : erabiltzaileak) {
+            if (erabiltzailea.getUsername().equals(username) && erabiltzailea.getPassword_hash().equals(password)) {
+                return erabiltzailea;
+            }
+        }
+        return null; //Ez da aurkitu erabiltzailea, pasahitza edo erabiltzailea okerra
+    }
+
 }

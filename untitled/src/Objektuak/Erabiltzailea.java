@@ -32,7 +32,48 @@ public class Erabiltzailea {
         return Integer.hashCode(id_erabiltzailea);
     }
 
+    //getter-ak
+
+    public int getId_erabiltzailea() {
+        return id_erabiltzailea;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword_hash() {
+        return password_hash;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getAktiboa() {
+        return aktiboa;
+    }
+
+    //setter-ak
 
 
+    public void setId_erabiltzailea(int id_erabiltzailea) {
+        this.id_erabiltzailea = id_erabiltzailea;
+    }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword_hash(String password_hash) {
+        this.password_hash = password_hash;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setAktiboa(int aktiboa) {
+        this.aktiboa = aktiboa;
+    }
 }
