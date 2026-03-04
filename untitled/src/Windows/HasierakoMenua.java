@@ -33,16 +33,26 @@ public class HasierakoMenua extends JFrame {
         panelCentro.add(imagen);
         panelCentro.add(Box.createRigidArea(new Dimension(0, 20)));
 
-        // Botones
-        JButton btnLogin = new JButton("Iniciar sesión");
-        JButton btnRegistro = new JButton("Registrarse");
-        JButton btnInvitado = new JButton("Entrar como invitado");
+        // Botoiak
+        JButton botoiaSartu = new JButton("Sesioa hasi");
+        JButton btnRegistro = new JButton("Erregistratu");
+        JButton btnInvitado = new JButton("Sartu erregistratu gabe");
 
-        btnLogin.setAlignmentX(Component.CENTER_ALIGNMENT);
+        //Botoien funtzionalitateak
+        botoiaSartu.addActionListener(e -> {
+            dispose();
+            new SaioaHasiMenua().setVisible(true);
+        });
+        btnInvitado.addActionListener(e -> {
+            dispose();
+            new ErregistroGabe().setVisible(true);
+        });
+
+        botoiaSartu.setAlignmentX(Component.CENTER_ALIGNMENT);
         btnRegistro.setAlignmentX(Component.CENTER_ALIGNMENT);
         btnInvitado.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        panelCentro.add(btnLogin);
+        panelCentro.add(botoiaSartu);
         panelCentro.add(Box.createRigidArea(new Dimension(0, 10)));
         panelCentro.add(btnRegistro);
         panelCentro.add(Box.createRigidArea(new Dimension(0, 10)));

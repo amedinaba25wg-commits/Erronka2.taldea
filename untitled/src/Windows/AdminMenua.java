@@ -47,7 +47,10 @@ public class AdminMenua extends JFrame{
         add(erdian, BorderLayout.CENTER);
 
         setVisible(true);
-
+        sahioaItxi.addActionListener(e -> {
+            dispose();
+            new HasierakoMenua().setVisible(true);
+        });
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

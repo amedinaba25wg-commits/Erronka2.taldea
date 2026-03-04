@@ -43,14 +43,20 @@ public class SaioaHasiMenua extends JFrame {
         botoia.addActionListener(e -> {
             String erabiltzailea = txtErabiltzailea.getText();
             String pasahitza = new String(txtPasahitza.getPassword());
-
-            Erabiltzailea erabiltzaileSartuta = this.zerrenda.login(erabiltzailea, pasahitza);
-
-            if (erabiltzaileSartuta != null) {
-                JOptionPane.showMessageDialog(this, "Login zuzena: " + erabiltzaileSartuta.getUsername());
-            } else {
-                JOptionPane.showMessageDialog(this, "Erabiltzailea edo pasahitza okerra");
+            //ADMIN sartzerakoan ba probatzeko oraindik ez daude datuak
+            if(erabiltzailea.equals("admin") && pasahitza.equals("admin")) {
+                dispose();
+                new AdminMenua().setVisible(true);
             }
+            else { //Hau gertatu beharko zen datuekin
+                Erabiltzailea erabiltzaileSartuta = this.zerrenda.login(erabiltzailea, pasahitza);
+                if (erabiltzaileSartuta != null) {
+                    JOptionPane.showMessageDialog(this, "Login zuzena: " + erabiltzaileSartuta.getUsername());
+                } else {
+                    JOptionPane.showMessageDialog(this, "Erabiltzailea edo pasahitza okerra");
+                }
+            }
+
         });
     }
 
