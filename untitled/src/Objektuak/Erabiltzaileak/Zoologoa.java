@@ -17,10 +17,11 @@ public class Zoologoa extends Erabiltzailea {
         espezieak = new ArrayList<Espeziea>();
     }
 
-    public void espezieaEzabatu() {
+    public void espezieaEzabatu(Espeziea espeziea) {
 
     }
-    public void espezieaGehitu() {
+    public void espezieaGehitu(Espeziea espeziea) {
 
     }
+
 }
