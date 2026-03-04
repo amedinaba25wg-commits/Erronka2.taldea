@@ -1,4 +1,4 @@
-package Objektuak;
+package Objektuak.Erabiltzaileak;
 
 public class Erabiltzailea {
     private int id_erabiltzailea;

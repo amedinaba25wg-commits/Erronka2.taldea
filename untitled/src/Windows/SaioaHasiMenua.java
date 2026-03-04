@@ -1,6 +1,6 @@
 package Windows;
 import Datuak.ErabiltzaileZerrenda;
-import Objektuak.Erabiltzailea;
+import Objektuak.Erabiltzaileak.Erabiltzailea;
 
 import javax.swing.*;
 import java.awt.*;
