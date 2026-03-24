@@ -1,7 +1,0 @@
-XEPDB1_WALLET =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL=TCPS)(HOST=localhost)(PORT=1522))
-    (CONNECT_DATA =
-      (SERVICE_NAME=XEPDB1)
-    )
-  )
