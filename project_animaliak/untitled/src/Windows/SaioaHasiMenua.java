@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class SaioaHasiMenua extends JFrame {
     private ErabiltzaileZerrenda zerrenda;
-    public SaioaHasiMenua() {
+    public SaioaHasiMenua(ErabiltzaileZerrenda zerrenda) {
         super("Animaliak saioa hasi");
         this.zerrenda = zerrenda;
 
@@ -61,7 +61,8 @@ public class SaioaHasiMenua extends JFrame {
                     dispose();
                 }
                 else if (erabiltzaileSartuta.getMota() == "user") {
-                    new
+                    new UserMenua();
+                    dispose();
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Erabiltzailea edo pasahitza okerra");
@@ -70,6 +71,6 @@ public class SaioaHasiMenua extends JFrame {
     }
 
     public static void main(String[] args) {
-        new SaioaHasiMenua();
+        new SaioaHasiMenua(new ErabiltzaileZerrenda());
     }
 }

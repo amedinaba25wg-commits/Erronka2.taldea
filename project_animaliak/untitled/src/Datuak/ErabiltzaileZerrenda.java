@@ -16,6 +16,19 @@ public class ErabiltzaileZerrenda {
         return -1;      // Ez da ondo gehitu
     }
 
+    public int ezabatuErabiltzailea(Erabiltzailea erabiltzailea) {
+        boolean ezabatuta = erabiltzaileak.remove(erabiltzailea);
+        if(ezabatuta) {
+            return 0;
+        }
+        return -1;
+    }
+
+    public void rolaAldatuErabiltzaileari(Erabiltzailea erabiltzailea, String rola) {
+        erabiltzailea.setMota(rola);
+    }
+
+
     public Erabiltzailea login(String username, String password) {
         for (Erabiltzailea erabiltzailea : erabiltzaileak) {
             if (erabiltzailea.getUsername().equals(username) && erabiltzailea.getPassword_hash().equals(password)) {

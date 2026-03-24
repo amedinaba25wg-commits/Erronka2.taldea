@@ -11,6 +11,7 @@ public class AdminMenua extends JFrame{
     private Administratzailea admin;
 
     AdminMenua(Erabiltzailea erabiltzailea) {
+        //Hasierako Admin menua
         super("Administrariaren menua");
         this.zerrenda = zerrenda;
         setLayout(new BorderLayout());
@@ -54,6 +55,7 @@ public class AdminMenua extends JFrame{
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
 
     public static void main(String[] args) {
         AdminMenua adminMenua = new AdminMenua(new Administratzailea(21, "admin Pepito", "dffdsljfds"));

@@ -31,6 +31,7 @@ public class GenusTaxonomy {
     public String getFiloa() {
         return filoa;
     }
+
     //Setter
     public void setGeneroa(String generoa) {
         this.generoa = generoa;

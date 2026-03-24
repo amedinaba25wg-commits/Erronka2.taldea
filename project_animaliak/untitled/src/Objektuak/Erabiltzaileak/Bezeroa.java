@@ -20,13 +20,16 @@ public class Bezeroa extends Erabiltzailea {
         maskotak = new ArrayList<Pet>();
     }
 
-    public void ikusiBereAnimaliak() {
-
+    public List<Pet> ikusiBereAnimaliak() {
+        return maskotak;
+        //Hemen datu basea
     }
-    public void maskotaGehitu() {
-
+    public void maskotaGehitu(Pet maskota) {
+        maskotak.add(maskota);
+        //Hemen datu basea
     }
-    public void maskotaKendu() {
-
+    public void maskotaKendu(Pet maskota) {
+        maskotak.remove(maskota);
+        //Hemen datu basea
     }
 }
