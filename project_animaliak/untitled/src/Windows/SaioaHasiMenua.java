@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class SaioaHasiMenua extends JFrame {
     private ErabiltzaileZerrenda zerrenda;
-    public SaioaHasiMenua(ErabiltzaileZerrenda zerrenda) {
+    public SaioaHasiMenua() {
         super("Animaliak saioa hasi");
         this.zerrenda = zerrenda;
 
@@ -48,22 +48,6 @@ public class SaioaHasiMenua extends JFrame {
 
             if (erabiltzaileSartuta != null) {
                 JOptionPane.showMessageDialog(this, "Login zuzena: " + erabiltzaileSartuta.getUsername());
-                if (erabiltzaileSartuta.getMota() == "admin") {
-                    new AdminMenua(erabiltzaileSartuta);
-                    dispose();
-                }
-                else if(erabiltzaileSartuta.getMota() == "zoologist") {
-                    new ZoologoMenua(erabiltzaileSartuta);
-                    dispose();
-                }
-                else if (erabiltzaileSartuta.getMota() == "bezero") {
-                    new BezeroMenua(erabiltzaileSartuta);
-                    dispose();
-                }
-                else if (erabiltzaileSartuta.getMota() == "user") {
-                    new UserMenua();
-                    dispose();
-                }
             } else {
                 JOptionPane.showMessageDialog(this, "Erabiltzailea edo pasahitza okerra");
             }
@@ -71,6 +55,6 @@ public class SaioaHasiMenua extends JFrame {
     }
 
     public static void main(String[] args) {
-        new SaioaHasiMenua(new ErabiltzaileZerrenda());
+        new SaioaHasiMenua();
     }
 }

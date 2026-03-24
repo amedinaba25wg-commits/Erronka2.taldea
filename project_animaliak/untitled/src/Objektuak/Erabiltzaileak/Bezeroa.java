@@ -11,25 +11,18 @@ public class Bezeroa extends Erabiltzailea {
         maskotak = new ArrayList<Pet>();
     }
 
-    public Bezeroa(Erabiltzailea erabiltzailea) {
-        super(erabiltzailea.getId_erabiltzailea(), erabiltzailea.getUsername(), erabiltzailea.getPassword_hash());
-    }
-
     public Bezeroa(int id_erabiltzailea, String username, String password_hash) {
         super(id_erabiltzailea, username, password_hash);
         maskotak = new ArrayList<Pet>();
     }
 
-    public List<Pet> ikusiBereAnimaliak() {
-        return maskotak;
-        //Hemen datu basea
+    public void ikusiBereAnimaliak() {
+
     }
-    public void maskotaGehitu(Pet maskota) {
-        maskotak.add(maskota);
-        //Hemen datu basea
+    public void maskotaGehitu() {
+
     }
-    public void maskotaKendu(Pet maskota) {
-        maskotak.remove(maskota);
-        //Hemen datu basea
+    public void maskotaKendu() {
+
     }
 }

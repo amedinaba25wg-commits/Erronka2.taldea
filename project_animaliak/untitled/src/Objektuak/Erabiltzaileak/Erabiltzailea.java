@@ -6,17 +6,6 @@ public class Erabiltzailea {
     private String password_hash;
     private String email;
     private int aktiboa;
-    private String mota;
-
-    public Erabiltzailea(int id_erabiltzailea, String username, String password_hash, String email, int aktiboa, String mota) {
-        this.id_erabiltzailea = id_erabiltzailea;
-        this.username = username;
-        this.password_hash = password_hash;
-        this.email = email;
-        this.aktiboa = aktiboa;
-        this.mota = mota;
-    }
-
     Erabiltzailea(int id_erabiltzailea) {
         this.id_erabiltzailea = id_erabiltzailea;
     }
@@ -44,6 +33,7 @@ public class Erabiltzailea {
     }
 
     //getter-ak
+
     public int getId_erabiltzailea() {
         return id_erabiltzailea;
     }
@@ -64,11 +54,9 @@ public class Erabiltzailea {
         return aktiboa;
     }
 
-    public String getMota() {
-        return mota;
-    }
-
     //setter-ak
+
+
     public void setId_erabiltzailea(int id_erabiltzailea) {
         this.id_erabiltzailea = id_erabiltzailea;
     }
@@ -87,9 +75,5 @@ public class Erabiltzailea {
 
     public void setAktiboa(int aktiboa) {
         this.aktiboa = aktiboa;
-    }
-
-    public void setMota(String mota) {
-        this.mota = mota;
     }
 }

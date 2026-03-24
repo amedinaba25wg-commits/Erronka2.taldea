@@ -1,17 +1,13 @@
 package Windows;
 import Datuak.ErabiltzaileZerrenda;
-import Objektuak.Erabiltzaileak.Administratzailea;
-import Objektuak.Erabiltzaileak.Erabiltzailea;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class AdminMenua extends JFrame{
     private ErabiltzaileZerrenda zerrenda;
-    private Administratzailea admin;
 
-    AdminMenua(Erabiltzailea erabiltzailea) {
-        //Hasierako Admin menua
+    AdminMenua() {
         super("Administrariaren menua");
         this.zerrenda = zerrenda;
         setLayout(new BorderLayout());
@@ -56,9 +52,8 @@ public class AdminMenua extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-
     public static void main(String[] args) {
-        AdminMenua adminMenua = new AdminMenua(new Administratzailea(21, "admin Pepito", "dffdsljfds"));
+        AdminMenua adminMenua = new AdminMenua();
     }
 
 }
